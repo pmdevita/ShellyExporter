@@ -1,0 +1,13 @@
+[package]
+name = "ShellyExporter"
+version = "0.1.0"
+authors = ["pmdevita <mewtwo2643@yahoo.com>"]
+edition = "2018"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros", "signal", "time"] }
+serde = { version = "1.0.214", features = ["derive"] }
+prometheus = "0.13.4"
+warp = "0.3.7"
+dotenv = "0.15.0"
