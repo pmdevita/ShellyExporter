@@ -5,5 +5,5 @@ COPY . .
 RUN cargo build --release
 
 FROM alpine:3.20
-COPY --from=builder /app/target/release/shellyexporter /usr/local/bin/
-CMD ["shellyexporter"]
+COPY --from=builder /app/target/release/ShellyExporter /usr/local/bin/
+CMD ["ShellyExporter"]
